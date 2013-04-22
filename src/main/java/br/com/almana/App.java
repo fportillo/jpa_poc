@@ -7,6 +7,12 @@ import javax.persistence.Persistence;
 import br.com.almana.domain.User;
 
 public class App {
+
+    /**
+     * See comments in persistence.xml and adjust the file before running this
+     * main program. The default is JTA-configured to run with JUnit test UserServiceTest.java.
+     * @param args
+     */
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPoc");
         EntityManager em = emf.createEntityManager();
